@@ -12,6 +12,9 @@
             <h1 class="text_title">Come play!</h1>
             <img src="IMGs/cool.png" width="60px" height="60" class="emoji_cool">
             </div>
+            <div class="gameover">
+                <h2 class="gameover_text">Game over</h2>
+            </div>
             <div class="scissors_button">
                 <button class="faq-button">
                     <img src="IMGs/scissors.png" width="50px" height="50px">
@@ -34,9 +37,16 @@
                 <span class="tooltip">PAPER</span>
               </button>
             </div>
-            <div class="bot_scissors">
+            <div class="bot_scissors" id="bot_scissors_reaction">
                 <img src="IMGs/black_scissors.png" width="20px" height="20px">
+            </div>
+            <div class="bot_paper" id="bot_paper_reaction">
+                <img src="IMGs/black_paper.png" width="20px" height="20px">
+            </div>
+            <div class="bot_rock" id="bot_rock_reaction">
+                <img src="IMGs/black_rock.png" width="20px" height="20px">
             </div>
         </section>
     </body>
+    <script src="logic.js"></script>
 </html>

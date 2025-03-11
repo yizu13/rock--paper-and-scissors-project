@@ -135,6 +135,24 @@
     
   }
 
+  .gameover{
+    position:absolute;
+    top:  15%;
+    left: 48%;
+  }
+
+  .gameover_text{
+   opacity: 0;
+  }
+
+  .gameover_text_action{
+    color:#d10e00;
+    opacity:1;
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 30px;
+  }
+
 .bot_scissors{
     opacity:0;
 }
@@ -143,12 +161,38 @@
     position: absolute;
     display:flex;
     opacity:1;
-    animation: bot_scissors_reaction 0.7s both;
+    animation: bot_result_animation 0.7s both;
     top: 54%;
     left: 50%;
 }
 
-@keyframes bot_scissors_reaction{
+.bot_paper{
+    opacity:0;
+}
+
+.bot_paper_animation{
+    position: absolute;
+    display:flex;
+    opacity:1;
+    animation: bot_result_animation 0.7s both;
+    top: 54%;
+    left: 50%;
+}
+
+.bot_rock{
+    opacity:0;
+}
+
+.bot_rock_animation{
+    position: absolute;
+    display:flex;
+    opacity:1;
+    animation: bot_result_animation 0.7s both;
+    top: 54%;
+    left: 50%;
+}
+
+@keyframes bot_result_animation{
 0%{
     scale:0;
 }
