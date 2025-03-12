@@ -35,6 +35,21 @@
     position: relative;
   }
 
+  .faq-button_disable {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    background: linear-gradient(63deg,#7e7e7e,#7e7e7e,#7e7e7e,#7e7e7e);
+    background-size: 240% 240%;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.151);
+    position: relative;
+  }
+
   
   @keyframes gradient-animation {
     0% {
@@ -76,12 +91,30 @@
     }
   }
   
+  
+
   .tooltip {
     position: absolute;
     top: -20px;
     opacity: 0;
     background-color: #ffe53b;
     background-image: linear-gradient(147deg, #ff8f00 0%, #ff4c00 74%);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.2s;
+    pointer-events: none;
+    letter-spacing: 0.5px;
+  }
+  .tooltip_disable {
+    position: absolute;
+    top: -20px;
+    opacity: 0;
+    background-color: #ffe53b;
+    background-image: linear-gradient(147deg, #7e7e7e 0%, #7e7e7e 74%);
     color: white;
     padding: 5px 10px;
     border-radius: 5px;
@@ -141,12 +174,24 @@
     left: 48%;
   }
 
-  .gameover_text{
-   opacity: 0;
+  .result{
+   opacity: 1;
+   color:#757575;
+   font-family: cursive;
+   font-weight: bold;
+   font-size: 30px;
   }
 
-  .gameover_text_action{
+  .result_gameover{
     color:#d10e00;
+    opacity:1;
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+  .result_win{
+    color:#006cd1;
     opacity:1;
     font-family: cursive;
     font-weight: bold;

@@ -13,26 +13,26 @@
             <img src="IMGs/cool.png" width="60px" height="60" class="emoji_cool">
             </div>
             <div class="gameover">
-                <h2 class="gameover_text">Game over</h2>
+                <h2 class="result" id="text_result"></h2>
             </div>
             <div class="scissors_button">
-                <button class="faq-button">
+                <button class="faq-button" id="scissors_but" onclick="Scissors_button()">
                     <img src="IMGs/scissors.png" width="50px" height="50px">
-                <span class="tooltip">SCISSORS</span>
+                <span class="tooltip" id="tooltipIDSCISSORS">SCISSORS</span>
               </button>
             </div>
 
             <div class="Rock_button">
-                <button class="faq-button">
+                <button class="faq-button" id="rock_but" onclick="Rock_button()">
                     <img src="IMGs/rock.png" width="50px" height="50px">
-                <span class="tooltip">ROCK</span>
+                <span class="tooltip" id="tooltipIDROCK">ROCK</span>
               </button>
             </div>
 
             <div class="paper_button">
-                <button class="faq-button">
+                <button class="faq-button" id="paper_but" onclick="Paper_button()">
                     <img src="imgs/paper.png" width="50px" height="50px">
-                <span class="tooltip">PAPER</span>
+                <span class="tooltip" id="tooltipIDPAPER">PAPER</span>
               </button>
             </div>
             <div class="bot_scissors" id="bot_scissors_reaction">
